@@ -1,0 +1,87 @@
+ 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff;
+            text-align: center;
+            direction: rtl;
+        }
+
+        header {
+            background-color: #3b2b1c;
+            padding: 15px;
+            color: white;
+        }
+
+        header img {
+            width: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 90%;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+
+        .banner {
+            background-color: #006400;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Coat_of_arms_of_Egypt_%28Official%29.svg/1200px-Coat_of_arms_of_Egypt_%28Official%29.svg.png" alt="شعار مصر">
+    </header>
+
+    <div class="container">
+        <h2>الآن .. نتيجة الثانوية العامة</h2>
+
+        <input type="text" placeholder="رقم الجلوس">
+        <select>
+            <option>نظام حديث</option>
+            <option>نظام قديم</option>
+        </select>
+
+        <button>عرض النتيجة</button>
+
+        <div class="banner">
+            <h3>وزارة التربية والتعليم</h3>
+            <p>ترحب بكم وتتمنى لأبنائنا وبناتنا الطلاب النجاح والتفوق</p>
+        </div>
+    </div>
+
+</body>
+</html>

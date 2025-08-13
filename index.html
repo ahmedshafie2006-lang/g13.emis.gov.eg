@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الآن .. نتيجة الثانوية العامة</title>
+  <!-- خط القاهرة -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f5f5f5;
+      color: #000;
+      direction: rtl;
+      text-align: center;
+    }
+    .logo {
+      background-color: #fff;
+      padding: 20px 0;
+    }
+    .logo img {
+      width: 80px;
+      height: auto;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 10px 0 20px;
+      color: #333;
+    }
+    .form-container {
+      background-color: #fff;
+      margin: 0 15px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .form-container input,
+    .form-container select {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+    .btn-result {
+      display: inline-block;
+      width: 100%;
+      padding: 14px;
+      margin-top: 10px;
+      background-color: #009639;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-result:hover {
+      background-color: #007a2e;
+    }
+    .banner {
+      background-color: #009639;
+      color: #fff;
+      margin: 20px 15px 0;
+      padding: 14px;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="https://g12.emis.gov.eg/img/logo.jpg" alt="شعار وزارة التربية والتعليم">
+  </div>
+
+  <div class="title">الآن .. نتيجة الثانوية العامة</div>
+
+  <div class="form-container">
+    <input type="text" placeholder="رقم الجلوس" id="seatNumber">
+    <select id="systemType">
+      <option value="modern">نظام حديث</option>
+      <option value="old">نظام قديم</option>
+    </select>
+    <button class="btn-result" onclick="checkNumber()">عرض النتيجة</button>
+    <div id="errorMsg" class="error"></div>
+  </div>
+
+  <div class="banner">
+    وزارة التربية والتعليم ترحب بكم وتتمنى لأبنائنا النجاح والتفوق
+  </div>
+
+  <script>
+    function checkNumber() {
+      let seatInput = document.getElementById('seatNumber').value.trim();
+      let errorMsg = document.getElementById('errorMsg');
+      errorMsg.textContent = ""; // مسح الرسالة السابقة
+
+      if (seatInput === "1640741") {
+        window.open("main.html", "_blank"); // يفتح في تبويب جديد
+      } 
+          if (seatInput === "1640804") {
+        window.open("main2.html", "_blank"); // يفتح في تبويب جديد
+      } 
+               if (seatInput === "1640701") {
+        window.open("main2.html", "_blank"); // يفتح في تبويب جديد
+      } 
+      
+      
+      else {
+        errorMsg.textContent = "❌ رقم الجلوس غير صحيح";
+      }
+    }
+  </script>
+
+</body>
+</html>
